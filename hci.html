@@ -301,14 +301,12 @@
                 <div id="collapse13" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <pre>
-                        <samp>
-                            &lt;ταχ-διεύθυνση&gt; ::- &lt;αποστολέας&gt; &lt;οδός&gt; &lt;κώδικας&gt;
-                            &lt;αποστολέας&gt;    ::- &lt;όνομα&gt; &lt;επίθετο&gt; |
-                                                &lt;επίθετο&gt; &lt;όνομα&gt;
-                            &lt;οδός&gt;          ::- &lt;όνομα οδού&gt; &lt;αριθμός&gt; |                                                          
-                                                &lt;αριθμός&gt; &lt;όνομα οδού&gt;                           
-                            &lt;κώδικας&gt; 	    ::- &lt;αριθμός&gt;    
-                        </samp>
+&lt;ταχ-διεύθυνση&gt; ::- &lt;αποστολέας&gt; &lt;οδός&gt; &lt;κώδικας&gt;
+&lt;αποστολέας&gt;    ::- &lt;όνομα&gt; &lt;επίθετο&gt; |
+                    &lt;επίθετο&gt; &lt;όνομα&gt;
+&lt;οδός&gt;          ::- &lt;όνομα οδού&gt; &lt;αριθμός&gt; |
+                    &lt;αριθμός&gt; &lt;όνομα οδού&gt;
+&lt;κώδικας&gt; 	    ::- &lt;αριθμός&gt;
                     </pre>
                     </div>
                 </div>
@@ -347,19 +345,17 @@
                 <div id="collapse15" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <pre>
-                        <samp>
-                        <strong>GOAL:</strong> CLOSE-WINDOW
-                        <strong>[select</strong>
-                            <strong>GOAL:</strong>  USE-MENU-METHOD
-                            .      MOVE-MOUSE-TO-FILE-MENU
-                            .      PULL-DOWN-FILE-MENU
-                            .      CLICK-OVER-CLOSE-OPTION
-                            <strong>GOAL:</strong>  USE-ALT-KEY-METHOD
-                            .      PRESS-ALT-F4-KEYS
-                        <strong>]</strong>
-                        Rule 1: Use USE-MENU-METHOD για περιστασιακό χρήστη
-                        Rule 2: Use USE-ALT-KEY-METHOD για έμπειρο χρήστη
-                        </samp>
+<strong>GOAL:</strong> CLOSE-WINDOW
+<strong>[select</strong>
+    <strong>GOAL:</strong>  USE-MENU-METHOD
+    .      MOVE-MOUSE-TO-FILE-MENU
+    .      PULL-DOWN-FILE-MENU
+    .      CLICK-OVER-CLOSE-OPTION
+    <strong>GOAL:</strong>  USE-ALT-KEY-METHOD
+    .      PRESS-ALT-F4-KEYS
+<strong>]</strong>
+Rule 1: Use USE-MENU-METHOD για περιστασιακό χρήστη
+Rule 2: Use USE-ALT-KEY-METHOD για έμπειρο χρήστη
                     </pre>
                     </div>
                 </div>
@@ -649,23 +645,23 @@
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapse27">
                         Δίδεται η παρακάτω προδιαγραφή εντολών του UNIX σε μορφή BNF. Να γράψετε την αντίστοιχη προδιαγραφή σε TAG:
                         <pre>
-                        Copy ::= 'cp' + όνομα-αρχείου + όνομα-αρχείου
-                               | 'cp' + ονόματα-αρχείων + υποκατάλογος
-                        Move ::= 'mv' + όνομα-αρχείου + όνομα-αρχείου
-                               | 'mv' + ονόματα-αρχείων + υποκατάλογος
-                        Link ::= 'ln' + όνομα-αρχείου + όνομα-αρχείου
-                               | 'ln' + ονόματα-αρχείων + υποκατάλογος                        
+Copy ::= 'cp' + όνομα-αρχείου + όνομα-αρχείου
+        | 'cp' + ονόματα-αρχείων + υποκατάλογος
+Move ::= 'mv' + όνομα-αρχείου + όνομα-αρχείου
+        | 'mv' + ονόματα-αρχείων + υποκατάλογος
+Link ::= 'ln' + όνομα-αρχείου + όνομα-αρχείου
+        | 'ln' + ονόματα-αρχείων + υποκατάλογος                        
                         </pre>
                     </a>
                 </div>
                 <div id="collapse27" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <pre><samp>
-                            Χειρισμός-αρχείου [λειτουργία] := εντολή[λειτουργία] + όνομα-αρχείου + όνομα-αρχείου |
-                            εντολή[λειτουργία] + ονόματα-αρχείων + υποκατάλογος
-                            εντολή[λειτουργία = Copy] := 'cp'
-                            εντολή[λειτουργία = Move] := 'mv'
-                            εντολή[λειτουργία = Link] := 'ln'                            
+Χειρισμός-αρχείου [λειτουργία] := εντολή[λειτουργία] + όνομα-αρχείου + όνομα-αρχείου |
+εντολή[λειτουργία] + ονόματα-αρχείων + υποκατάλογος
+εντολή[λειτουργία = Copy] := 'cp'
+εντολή[λειτουργία = Move] := 'mv'
+εντολή[λειτουργία = Link] := 'ln'                            
                     </samp></pre>
                     </div>
                 </div>
