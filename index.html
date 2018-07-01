@@ -2,86 +2,49 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<h2>Collapsibles</h2>
-
-<p>A Collapsible:</p>
-<button class="collapsible">Open Collapsible</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<p>Collapsible Set:</p>
-<button class="collapsible">Τί ονομάζεται ευχρηστία ενός συστήματος και σε ποιες παραμέτρους ανέρχεται;</button>
-<div class="content">
-    <p>Ευχρηστία ενός συστήματος είναι η ικανότητά του να λειτουργεί αποτελεσματικά και αποδοτικά ενώ παρέχει υποκειμενική ικανοποίηση στους χρήστες του. </p>
-    <p>Η ευχρηστία ενός συστήματος αναλύεται στις εξής παραμέτρους:</p>
-    <ul>
-        <li>Ευκολία εκμάθησης</li>
-        <li>Υψηλή ποιότητα εκτέλεσης έργου</li>
-        <li>Χαμηλή συχνότητα σφαλμάτων χρήστη</li>
-        <li>Ευκολία συγκράτησης της γνώσης της χρήσης του</li>
-        <li>Υποκειμενική ικανοποίηση του χρήστη</li>
-    </ul>
-</div>
-<button class="collapsible">Open Section 2</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 3</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-}
-</script>
-
 <div class="container">
-        <h2>Accordion Example</h2>
-        <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+        <h2>Αλληλεπίδραση ανθρώπου υπολογιστή</h2>
         <div class="panel-group" id="accordion">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Τί ονομάζεται ευχρηστία ενός συστήματος και σε ποιες παραμέτρους ανέρχεται;</a>
               </h4>
             </div>
             <div id="collapse1" class="panel-collapse collapse in">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="panel-body">
+                    <p>Ευχρηστία ενός συστήματος είναι η ικανότητά του να λειτουργεί αποτελεσματικά και αποδοτικά ενώ παρέχει υποκειμενική ικανοποίηση στους χρήστες του.</p>
+                    <p>Η ευχρηστία ενός συστήματος αναλύεται στις εξής παραμέτρους:</p>
+                    <li>
+                        <ul>Ευκολία εκμάθησης</ul>
+                        <ul>Υψηλή ποιότητα εκτέλεσης έργου</ul>
+                        <ul>Χαμηλή συχνότητα σφαλμάτων χρήστη</ul>
+                        <ul>Ευκολία συγκράτησης της γνώσης της χρήσης του</ul>
+                        <ul>Υποκειμενική ικανοποίηση του χρήστη</ul>
+                    </li>
+                </div>
             </div>
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Σε ποιες κατηγορίες διακρίνονται τα νοητικά μοντέλα που αφορούν τη χρήση συσκευών;</a>
               </h4>
             </div>
             <div id="collapse2" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              <div class="panel-body">
+                  <p>Τα νοητικά μοντέλα που αφορούν τη χρήση συσκευών διακρίνονται σε δύο κατηγορίες:</p>
+                  <li>
+                        <ul><strong>Δομικό μοντέλο</strong> μιας συσκευής, που περιγράφει λεπτομερώς την αρχή λειτουργίας της και την ακριβή δομή της</ul>
+                        <ul><strong>Λειτουργικό μοντέλο</strong> που αφορά τη λειτουργία της συσκευής και δεν έχει αντιστοιχία με δομικά χαρακτηριστικά</ul>
+                    </li>
+              </div>
             </div>
           </div>
           <div class="panel panel-default">
